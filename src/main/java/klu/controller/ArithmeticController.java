@@ -16,4 +16,12 @@ public class ArithmeticController {
 	{
 		return "Addititon of two number: "+(a+b);
 	}
+	
+	@GetMapping("/sub/{A}/{B}")
+	public String sub(@PathVariable("A") int a,@PathVariable("B") int b)
+	{
+		return "Subraction of two number: "+(a-b);
+	}
+	
+	
 }
